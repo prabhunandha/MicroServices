@@ -1,6 +1,6 @@
 package com.learning.microservices.coreconcepts.sort;
 
-public class BubbleSort {
+public class BubbleSort_1 {
     public static void main(String[] args) {
         System.out.println("Bubble Sort...");
 
