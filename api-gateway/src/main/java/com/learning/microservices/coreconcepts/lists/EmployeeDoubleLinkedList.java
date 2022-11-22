@@ -1,12 +1,12 @@
 package com.learning.microservices.coreconcepts.lists;
 
-public class EmployeeLinkedList {
+public class EmployeeDoubleLinkedList {
     private EmployeeNode head;
     private int size;
 
     public void addToFront(Employee employee){
         EmployeeNode employeeNode =  new EmployeeNode(employee, head);
-//        employeeNode.setNext(head);
+//        employeeNode.setNext(head); // not needed and treated as part of constructor
         head = employeeNode;
         size++;
     }

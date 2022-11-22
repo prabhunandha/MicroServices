@@ -26,14 +26,33 @@ public class Main {
         }
 
         // Checking if the element is existing
-
         System.out.println(employeeList.contains(new Employee("Prabhu", "Kadiam", 2)));
 
         // Finding the index of an element
-
-
+        System.out.println(employeeList.indexOf(new Employee("Jane", "Jones", 123)));
 
 //        employeeList.forEach(System.out::println);
 
+        Employee e1 = new Employee("Jane", "sdad", 123);
+        Employee e2 = new Employee("sd", "Jonvbfes", 34535);
+        Employee e3 = new Employee("dfdsf", "gdfg", 13);
+        Employee e4 = new Employee("dfgerg", "dfbdfg", 567);
+
+        EmployeeLinkedList employeeLinkedList = new EmployeeLinkedList();
+
+        System.out.println("Is Empty? "+employeeLinkedList.isEmpty());
+
+        employeeLinkedList.addToFront(e1);
+        employeeLinkedList.addToFront(e2);
+        employeeLinkedList.addToFront(e3);
+        employeeLinkedList.addToFront(e4);
+
+        System.out.println("Is Empty? "+employeeLinkedList.isEmpty());
+
+        System.out.println("--------------------");
+        employeeLinkedList.printLL();
+        employeeLinkedList.removeNode();
+        System.out.println("*************");
+        employeeLinkedList.printLL();
     }
 }
