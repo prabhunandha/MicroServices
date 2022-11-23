@@ -5,8 +5,8 @@ public class EmployeeLinkedList {
     private int size;
 
     public void addToFront(Employee employee){
-        EmployeeNode employeeNode =  new EmployeeNode(employee, head);
-//        employeeNode.setNext(head);
+        EmployeeNode employeeNode =  new EmployeeNode(employee);
+        employeeNode.setNext(head);
         head = employeeNode;
         size++;
     }

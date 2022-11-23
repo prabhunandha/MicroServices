@@ -54,5 +54,23 @@ public class Main {
         employeeLinkedList.removeNode();
         System.out.println("*************");
         employeeLinkedList.printLL();
+        System.out.println("*************");
+
+        EmployeeDoubleLinkedList employeeDoubleLinkedList = new EmployeeDoubleLinkedList();
+        employeeDoubleLinkedList.addToFront(e1);
+        employeeDoubleLinkedList.addToFront(e2);
+        employeeDoubleLinkedList.addToFront(e3);
+        employeeDoubleLinkedList.addToFront(e4);
+
+        System.out.println(employeeDoubleLinkedList.getSize());
+        employeeDoubleLinkedList.printLL();
+
+        System.out.println("*************");
+
+        Employee e5 = new Employee("tyuryrt", "dwqwqefbdfg", 5678);
+        employeeDoubleLinkedList.addToEnd(e5);
+        System.out.println(employeeDoubleLinkedList.getSize());
+        employeeDoubleLinkedList.printLL();
+
     }
 }

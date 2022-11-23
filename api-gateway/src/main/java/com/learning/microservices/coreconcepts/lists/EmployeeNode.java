@@ -1,13 +1,14 @@
 package com.learning.microservices.coreconcepts.lists;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
 @Data
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class EmployeeNode {
-    private Employee employee;
+    private final Employee employee;
     private EmployeeNode next;
+    private EmployeeNode previous;
 
     public String toString(){
         return employee.toString();
