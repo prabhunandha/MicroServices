@@ -18,6 +18,34 @@ public class EmployeeDoubleLinkedList {
         size++;
     }
 
+    public void addingToFront(Employee employee){
+        EmployeeNode employeeNode = new EmployeeNode(employee);
+        employeeNode.setNext(head);
+
+        if(isEmpty() || head == null){
+            tail = employeeNode;
+        } else {
+//            employeeNode.setNext(head);
+            head.setPrevious(employeeNode);
+        }
+        head = employeeNode;
+        size++;
+    }
+
+    public void addingToEnd(Employee employee){
+        EmployeeNode employeeNode = new EmployeeNode(employee);
+//        employeeNode.setPrevious(tail);
+
+        if(tail == null || isEmpty()){
+            head = employeeNode;
+        } else {
+            tail.setNext(employeeNode);
+            employeeNode.setPrevious(tail);
+        }
+        tail = employeeNode;
+        size++;
+    }
+
     public void addToEnd(Employee employee){
         EmployeeNode employeeNode = new EmployeeNode(employee);
 

@@ -56,11 +56,11 @@ public class Main {
         employeeLinkedList.printLL();
         System.out.println("*************");
 
-        EmployeeDoubleLinkedList employeeDoubleLinkedList = new EmployeeDoubleLinkedList();
-        employeeDoubleLinkedList.addToFront(e1);
-        employeeDoubleLinkedList.addToFront(e2);
-        employeeDoubleLinkedList.addToFront(e3);
-        employeeDoubleLinkedList.addToFront(e4);
+        EmployeeDoubleLL employeeDoubleLinkedList = new EmployeeDoubleLL();
+        employeeDoubleLinkedList.addingToFront(e1);
+        employeeDoubleLinkedList.addingToFront(e2);
+        employeeDoubleLinkedList.addingToFront(e3);
+        employeeDoubleLinkedList.addingToFront(e4);
 
         System.out.println(employeeDoubleLinkedList.getSize());
         employeeDoubleLinkedList.printLL();
@@ -68,8 +68,28 @@ public class Main {
         System.out.println("*************");
 
         Employee e5 = new Employee("tyuryrt", "dwqwqefbdfg", 5678);
-        employeeDoubleLinkedList.addToEnd(e5);
+        employeeDoubleLinkedList.addingToEnd(e5);
         System.out.println(employeeDoubleLinkedList.getSize());
+        employeeDoubleLinkedList.printLL();
+
+        System.out.println("2222222222222");
+        employeeDoubleLinkedList.removeFromFront();
+        employeeDoubleLinkedList.printLL();
+
+        System.out.println("3333333");
+        employeeDoubleLinkedList.removeFromTail();
+        employeeDoubleLinkedList.printLL();
+
+        System.out.println("44444");
+        employeeDoubleLinkedList.removeFromTail();
+        employeeDoubleLinkedList.printLL();
+
+        System.out.println("55555");
+        employeeDoubleLinkedList.removeFromTail();
+        employeeDoubleLinkedList.printLL();
+
+        System.out.println("666666");
+        employeeDoubleLinkedList.removeFromTail();
         employeeDoubleLinkedList.printLL();
 
     }
