@@ -8,12 +8,12 @@ public class PrePostIncrementTest {
         int j = 7;
 
         int a = i--;
-        System.out.println("a->"+a); // 4 4
-        System.out.println("i->"+i); // 5 3
+        System.out.println("a->"+a); // for ++ 4; for -- 4;
+        System.out.println("i->"+i); // for ++ 5; for -- 3;
 
         int b = --j;
-        System.out.println("b->"+b); // 8 6
-        System.out.println("j->"+j); // 8 6
+        System.out.println("b->"+b); // for ++ 8; for -- 6;
+        System.out.println("j->"+j); // for ++ 8; for -- 6;
 
 
     }
