@@ -40,9 +40,9 @@ public class TreeNode {
         }
     }
 
-//    public String toString() {
-//        return "Data = " + data;
-//    }
+    public String toString() {
+        return "Data = " + data;
+    }
 
     public TreeNode get(int value) {
         if(data == value) return this;
